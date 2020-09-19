@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="../layui-v2.5.6/layui/css/layui.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <span class="layui-breadcrumb" style="margin-left: 10px;">
+        <a href="">首页</a>
+        <a href="">学生信息</a>
+        <a><cite>学生信息表</cite></a>
+    </span>
+
+    <main>
+        <div class="topmenu">
+            <input type="text" name="title" required lay-verify="required" placeholder="请输入学生信息" autocomplete="off"
+                class="layui-input search" style="width: 250px;">
+            <button class="layui-btn layui-btn-normal"> <i class="layui-icon "></i> 搜索</button>
+            
+            <button type="button" class="layui-btn add" style="margin-right: 20px;">
+                <i class=" layui-icon">&#xe608;</i> 添加
+            </button>
+        </div>
+        <table class="layui-table" style="margin: 0;">
+            <colgroup>
+                <col width="150">
+                <col width="200">
+                <col>
+            </colgroup>
+            <thead>
+                <tr>
+                    <th>学号</th>
+                    <th>姓名</th>
+                    <th>性别</th>
+                    <th>年龄</th>
+                    <th>联系方式</th>
+                    <th>操作</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+        <div id="demo"></div>
+
+        <div class="layui-row" id="InfoUpdate" style="display: none;">
+            <div class="layui-col-md10">
+                <form id="reset" class="layui-form layui-from-pane" action="" style="margin-top: 20px">
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">学&emsp;&emsp;号</label>
+                        <div class="layui-input-block">
+                            <input id="name" type="text" name="neweqptIdCode" required lay-verify="required"
+                                autocomplete="off" placeholder="添加后生成" disabled  class="layui-input id">
+                        </div>
+                    </div>
+
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">姓&emsp;&emsp;名</label>
+                        <div class="layui-input-block">
+                            <input id="earnest_money"  type="text" name="neweqptIdCode" required lay-verify="required"
+                                autocomplete="off" class="layui-input studentName" value="">
+                        </div>
+                    </div>
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">性&emsp;&emsp;别</label>
+                        <div class="layui-input-block">
+                            <input id="earnest_money" type="text" name="neweqptIdCode" required lay-verify="required"
+                                autocomplete="off" class="layui-input sex" value="">
+                        </div>
+                    </div>
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">年&emsp;&emsp;龄</label>
+                        <div class="layui-input-block">
+                            <input id="earnest_money" type="text" name="neweqptIdCode" required lay-verify="required"
+                                autocomplete="off" class="layui-input age" value="">
+                        </div>
+                    </div>
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">联系方式</label>
+                        <div class="layui-input-block">
+                            <input id="earnest_money" type="text" name="neweqptIdCode" required lay-verify="required"
+                                autocomplete="off" class="layui-input phone" value="">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- <div id="del" style="display: none;">
+
+        </div> -->
+    </main>
+
+    <script src="../jquery.js"></script>
+    <script src="../layui-v2.5.6/layui/layui.all.js"></script>
+    <script src="./main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./mainPage.css">
+    <link rel="stylesheet" href="../layui-v2.5.6/layui/css/layui.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <ul class="layui-nav topmenu">
+            <li class="layui-nav-item">
+                <a href="">个人中心<span class="layui-badge-dot"></span></a>
+            </li>
+            <li class="layui-nav-item">
+                <a href=""><img src="" id="imgs" class="layui-nav-img">我</a>
+                <dl class="layui-nav-child">
+                    <dd><a href="./message.html" target="box">修改信息</a></dd>
+                    <dd><a href="javascript:;">安全管理</a></dd>
+                    <dd><a href="javascript:;">退出</a></dd>
+                </dl>
+            </li>
+        </ul>
+    </header>
+
+
+    <section>
+        <aside>
+            <ul class="layui-nav layui-nav-tree">
+                <!-- 侧边导航: <ul class="layui-nav layui-nav-tree layui-nav-side"> -->
+                <li class="layui-nav-item layui-nav-itemed">
+                    <a href="javascript:;">学生信息</a>
+                    <dl class="layui-nav-child">
+                        <dd><a href="./main.html" target="box">学生信息表</a></dd>
+                        <dd><a href="./message.html" target="box">修改账户</a></dd>
+                    </dl>
+                </li>
+            </ul>
+        </aside>
+
+        <main>
+            <iframe src="./main.html" name="box"></iframe>
+        </main>
+    </section>
+    <script src="../jquery.js"></script>
+    <script src="../layui-v2.5.6/layui/layui.all.js"></script>
+    <script src="./mainPage.js"></script>
+</body>
+
+</html>

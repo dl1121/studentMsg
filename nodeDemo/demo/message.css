@@ -1,0 +1,16 @@
+#username{
+    cursor: not-allowed;
+}
+.upload{
+    position: relative;
+    display: inline-block;
+}
+.upload button{
+    position: absolute;
+    top: -16px;
+    left: 0;
+    
+}
+.upload input{
+    display: none;
+}

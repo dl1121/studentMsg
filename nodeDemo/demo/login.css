@@ -1,0 +1,28 @@
+html,body{
+    height: 100%;
+    background-color: #f2f2f2;
+
+}
+section{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.layui-form{
+    width: 500px;
+    height: 450px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+}
+aside{
+    text-align: center;
+    padding-right: 70px;
+}
+.layui-form input,
+.layui-form button{
+    width: 300px;
+}

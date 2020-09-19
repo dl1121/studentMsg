@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./login.css">
+    <link rel="stylesheet" href="../layui-v2.5.6/layui/css/layui.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <section>
+        <form class="layui-form" action="">
+            <aside>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">账号</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="username" required lay-verify="required" placeholder="请输入管理员用户"
+                            autocomplete="off" class="layui-input">
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">密码</label>
+                    <div class="layui-input-inline">
+                        <input type="password" name="password" required lay-verify="required" placeholder="请输入管理员密码"
+                            autocomplete="off" class="layui-input">
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <div class="layui-input-block">
+                        <button class="layui-btn" lay-submit lay-filter="formDemo">登录</button>
+                    </div>
+                </div>
+            </aside>
+
+        </form>
+    </section>
+
+    <script src="../jquery.js"></script>
+    <script src="../layui-v2.5.6/layui/layui.all.js"></script>
+    <script src="./main.js"></script>
+</body>
+
+</html>

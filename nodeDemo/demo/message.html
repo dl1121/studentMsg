@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./message.css">
+    <link rel="stylesheet" href="../layui-v2.5.6/layui/css/layui.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="layui-col-md12">
+    
+        <div class="layui-card">
+            <div class="layui-card-header">设置我的资料</div>
+            <form>
+            <div class="layui-card-body" pad15="">
+
+                <div class="layui-form" lay-filter="">
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">我的角色</label>
+                        <div class="layui-input-inline">
+                            <select name="role" lay-verify="">
+                                <option value="1" selected="">管理员</option>
+                                <option value="2" disabled="">审核员</option>
+                                <option value="3" disabled="">编辑人员</option>
+                            </select>
+                        </div>
+                        <div class="layui-form-mid layui-word-aux">当前角色不可更改为其它角色</div>
+                    </div>
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">用户名</label>
+                        <div class="layui-input-inline">
+                            <input type="text" name="username" value="root" disabled id="username" class="layui-input">
+                        </div>
+                        <div class="layui-form-mid layui-word-aux">当前用户名不可更改</div>
+                    </div>
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">昵称</label>
+                        <div class="layui-input-inline">
+                            <input type="text" name="nickname" value="" lay-verify="nickname" autocomplete="off"
+                                placeholder="请输入昵称" class="layui-input">
+                        </div>
+                    </div>
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">头像</label>
+                        <div class="layui-input-inline">
+                            <input name="avatar" lay-verify="required" id="LAY_avatarSrc" placeholder="图片地址"
+                               readonly value="" class="layui-input">
+                        </div>
+
+                          <div class="upload">
+                               <input name="img" id="upl" type="file" accept="image/*" >
+                              <button type="button" class="layui-btn" id="test1">
+                                  <i class="layui-icon">&#xe67c;</i>上传图片
+                              </button>
+                          </div>
+                            
+        
+                    </div>
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">手机</label>
+                        <div class="layui-input-inline">
+                            <input type="text" name="phone" value="" lay-verify="phone" autocomplete="off"
+                                class="layui-input">
+                        </div>
+                    </div>
+                    <div class="layui-form-item">
+                        <div class="layui-input-block">
+                            <button class="layui-btn" type="submit">确认修改</button>
+                            <button type="reset" class="layui-btn layui-btn-primary">重新填写</button>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </form>
+        </div>
+    
+    </div>
+    <script src="../jquery.js"></script>
+    <script src="../layui-v2.5.6/layui/layui.all.js"></script>
+    <script src="./message.js"></script>
+</body>
+
+</html>
